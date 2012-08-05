@@ -64,14 +64,14 @@
 	</style>
     </head>
  
-    <body>
+    <body id="body">
         <div>
             <header>
                 <h1>JavaScript</h1>
             </header>
             <div id="toolbar">
-                <input type="button" value="black" />
-                <input type="button" value="white" />
+		<input type="button" value="black" onclick="document.getElementById('body').className='black'" />
+		<input type="button" value="white" onclick="document.getElementById('body').className='white'" />
             </div>
             <nav>
                 <ul>
